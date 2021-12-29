@@ -1,0 +1,21 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "intro-schematic": {
+      "description": "A blank schematic.",
+      "factory": "./intro-schematic/index#introSchematic"
+    },
+    "new-project-root": {
+      "description": "Changes a default root folder for new projects and libraries.",
+      "factory": "./new-project-root/index#newProjectRoot"
+    },
+    "new-library": {
+      "description": "Creates a new library in libs folder.",
+      "factory": "./new-library/index#newLibrary"
+    },
+    "new-application": {
+      "description": "Creates a new application in apps folder.",
+      "factory": "./new-application/index#newApplication"
+    }
+  }
+}

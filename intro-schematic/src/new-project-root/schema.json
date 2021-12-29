@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "$id": "SchematicsNewProjectRoot",
+    "title": "Change New Project Root Schema",
+    "type": "object",
+    "properties": {
+        "name": {
+            "description": "The name of new project / library root folder.",
+            "type": "string"
+        }
+    },
+    "required": [
+        "name"
+    ]
+}
