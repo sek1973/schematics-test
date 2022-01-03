@@ -1,10 +1,10 @@
 import { normalize, strings, workspaces } from '@angular-devkit/core';
-import { apply, applyTemplates, chain, mergeWith, move, Rule, SchematicsException, Tree, url } from '@angular-devkit/schematics';
+import { apply, applyTemplates, chain, mergeWith, move, Rule, SchematicContext, SchematicsException, Tree, url } from '@angular-devkit/schematics';
 import { createHost } from '../common/setup';
 import { Schema } from './schema';
 
 export function introSchematic(options: Schema): Rule {
-  return async (tree: Tree) => {
+  return async (tree: Tree, context: SchematicContext) => {
     // context.addTask(new NodePackageInstallTask());
 
     const host = createHost(tree);
@@ -35,7 +35,7 @@ export function introSchematic(options: Schema): Rule {
     ]);
 
     const root = workspace.extensions.newProjectRoot;
-    tree.create('log.js', `Root value: ${root}`);
+    context.logger.info(`Root value: ${root}`);
 
     return chain([
       mergeWith(templateSource)
