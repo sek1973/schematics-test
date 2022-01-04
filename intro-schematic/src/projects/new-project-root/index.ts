@@ -1,6 +1,6 @@
 import { workspaces } from '@angular-devkit/core';
 import { Rule, SchematicContext, Tree } from '@angular-devkit/schematics';
-import { createHost } from '../common/setup';
+import { createHost } from '../../common/setup';
 import { Schema } from './schema';
 
 export function newProjectRoot(options: Schema): Rule {
