@@ -11,28 +11,7 @@
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
-    "paths": {
-      "my-test": [
-        "dist/my-test/my-test",
-        "dist/my-test"
-      ],
-      "my-test2": [
-        "dist/my-test2/my-test2",
-        "dist/my-test2"
-      ],
-      "my-test3": [
-        "dist/my-test3/my-test3",
-        "dist/my-test3"
-      ],
-      "my-test4": [
-        "dist/my-test4/my-test4",
-        "dist/my-test4"
-      ],
-      "my-test5": [
-        "dist/my-test5/my-test5",
-        "dist/my-test5"
-      ]
-    },
+    "paths": {},
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
