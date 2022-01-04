@@ -16,7 +16,7 @@ export function newApplication(options: Schema): Rule {
 
     const newProjectRootAsLibRule = schematic(
       'new-project-root',
-      { name: 'apps' }
+      { name: 'libs' }
     );
 
     return chain([

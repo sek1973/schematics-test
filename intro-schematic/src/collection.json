@@ -1,9 +1,9 @@
 {
   "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
   "schematics": {
-    "intro-schematic": {
-      "description": "A blank schematic.",
-      "factory": "./intro-schematic/index#introSchematic"
+    "new-service": {
+      "description": "Creates a new service using template.",
+      "factory": "./new-service/index#newService"
     },
     "new-project-root": {
       "description": "Changes a default root folder for new projects and libraries.",

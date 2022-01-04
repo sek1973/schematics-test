@@ -3,10 +3,8 @@ import { apply, applyTemplates, chain, mergeWith, move, Rule, SchematicContext, 
 import { createHost } from '../common/setup';
 import { Schema } from './schema';
 
-export function introSchematic(options: Schema): Rule {
+export function newService(options: Schema): Rule {
   return async (tree: Tree, context: SchematicContext) => {
-    // context.addTask(new NodePackageInstallTask());
-
     const host = createHost(tree);
     const { workspace } = await workspaces.readWorkspace('/', host);
 
